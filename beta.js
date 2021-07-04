@@ -17,7 +17,7 @@ const config = require("./Config.json");
 
 beta.on('ready', async () => {
   beta.user.setActivity(`${config.Status}`, { status: "online"} ,{ type: 'PLAYİNG'})
-  .then(console.log(`${client.user.tag} İsmiyle Discord Bağlantısı kuruldu.`))
+  .then(console.log(`${beta.user.tag} İsmiyle Discord Bağlantısı kuruldu.`))
   .catch(() => console.log(`Bir hata ile karşılaştım.`))
 });
 
