@@ -73,7 +73,7 @@
 ## };
 
 ### Teşekkürler 🧡
- - Hatalarımda yardım edip zaman harcadığı için [wizârd svartalf#1111](https://discord.com/users/852603732494647347) teşekkür ederim.
+ - Hatalarımda yardım edip zaman harcadığı için [wizârd svartalf#1111](https://discord.com/users/852603732494647347) 'a teşekkür ederim.
 
 # İletişim
 * [Discord Profilim](https://discord.com/users/852615172673503262)
