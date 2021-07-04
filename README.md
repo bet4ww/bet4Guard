@@ -69,7 +69,7 @@
   - [x] Kick Koruma
   - [x] Ban Açma Koruma
   - [x] Bot Koruma
-  - [x] Güvenli Fonksiyonlu
+  - [x] Güvenli Fonksiyonu
 ## };
 
 ### Teşekkürler 🧡
