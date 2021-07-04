@@ -2,12 +2,6 @@ const { Client, Discord, MessageEmbed } = require("discord.js");
 const beta = new Client();
 const config = require("./Config.json");
 
-beta.on('ready', async () => {
-  beta.user.setActivity(`${config.Status}`, { status: "online"} ,{ type: 'PLAYİNG'})
-  .then(console.log(`${client.user.tag} İsmiyle Discord Bağlantısı kuruldu.`))
-  .catch(() => console.log(`Bir hata ile karşılaştım.`))
-});
-
   function guvenli(kisiID) {
     let uye = beta.guilds.cache.get(config.guildID).members.cache.get(kisiID);
     let betasafe = config.whitelist || [];
@@ -20,6 +14,12 @@ beta.on('ready', async () => {
     if (!userID) return;
     if (tur == "jail") return userID.roles.cache.has(config.boosterRole) ? userID.roles.set([config.boosterRole, config.jailRole]) : userID.roles.set([config.jailRole]);
     if (tur == "ban") return userID.ban({ reason: "Beta Koruma Sistemi" }).catch()};
+
+beta.on('ready', async () => {
+  beta.user.setActivity(`${config.Status}`, { status: "online"} ,{ type: 'PLAYİNG'})
+  .then(console.log(`${client.user.tag} İsmiyle Discord Bağlantısı kuruldu.`))
+  .catch(() => console.log(`Bir hata ile karşılaştım.`))
+});
 
 //-                                                                        ROL KORUMA                                                                        -\\
 
